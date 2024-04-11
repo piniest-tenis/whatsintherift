@@ -1,0 +1,42 @@
+@import 'variables.modules.scss';
+
+html, main {
+    &:has(article.home-page) {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+article.home-page {
+    position: absolute;
+    overflow: hidden;
+    padding: 2rem 1.4rem;
+    max-width: 40vw;
+    left: 50%;
+    top: 50%;
+    
+    &.expanded {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-2deg) scale(100%);
+
+        h1, h2, h3, p, ul {
+            opacity: 1;
+            transform: rotate(2deg) translateY(0);
+        }
+    }
+
+    @include media('<= tablet'){
+        position: static;
+        left: unset;
+        top: unset;
+        max-width: unset;
+        
+        &.expanded {
+            transform: scale(100%);
+
+            h1, h2, h3, p, ul {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

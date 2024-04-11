@@ -1,0 +1,27 @@
+@import 'include-media';
+
+$min-width: 768px;
+
+$breakpoints: (
+        'phone': 320px,
+        'largephone': 560px,
+        'tablet': 768px,
+        'smallscreen': 960px,
+        'desktop': 1024px
+) !default;
+
+$media-expressions: (
+        'screen': 'screen',
+        'print': 'print',
+        'handheld': 'handheld',
+        'landscape': '(orientation: landscape)',
+        'portrait': '(orientation: portrait)',
+        'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
+        'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
+) !default;
+
+$unit-intervals: (
+        'px': 1,
+        'em': 0.01,
+        'rem': 0.1
+) !default;

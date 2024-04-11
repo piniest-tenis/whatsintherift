@@ -1,0 +1,63 @@
+article.gencon-2024 {
+    position: static;
+    left: 50%;
+    top: 50%;
+    max-width: 50vw;
+    padding: 2.8rem 2.8rem 3.8rem 2.8rem;
+    margin-bottom: 200px;
+    font-size: 1.35vh;
+
+    &.squiggly-bg.expanded {
+        transform: translate(50%, 0) rotate(-2deg);
+    }
+
+    img.indy {
+        width: calc(100% + 11.6rem);
+        position: relative;
+        clip-path: polygon(2% 0, 93.1% 0, 96% 100%, 5% 100%);
+        margin-right: -5.8rem;
+        margin-left: -5.8rem;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin: 0 1rem;
+
+        > li {
+            display: block;
+        }
+    }
+
+    .upper-right {
+        top: -2rem;
+    }
+
+    @include media('<= tablet') {
+        position: static;
+        left: unset;
+        top: unset;
+        transform: unset;
+        max-width: unset;
+        font-size: 1.6rem;
+        padding-bottom: 8rem;
+
+        &.squiggly-bg.expanded {
+            transform: unset;
+
+            > * {
+                transform: unset;
+            }
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        img.indy {
+            width: 100vw;
+            margin-left: -2.8rem;
+            clip-path: none;
+            transform: unset;
+        }
+    }
+}

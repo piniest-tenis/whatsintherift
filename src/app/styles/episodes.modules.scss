@@ -1,0 +1,36 @@
+@import 'variables.modules.scss';
+
+div.episodes {
+    article.episodes {
+        position: relative;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%) rotate(-2deg);
+        font-size: 1.4rem;
+        padding: 1.4rem 1.4rem 2.8rem 1.4rem;
+        margin-bottom: 4rem;
+
+        @include media('<=tablet') {
+            padding: 1.4rem;
+            position: static;
+            width: 100%;
+            left: 0;
+            transform: unset;
+        }
+    }
+
+    iframe.ml-form-embedContainer {
+        position: relative;
+        max-width: 50vw;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include media('<= tablet'){
+            position: static;
+            max-width: unset;
+            left: unset;
+            transform: unset;
+            padding-bottom: 8rem;
+        }
+    }
+}
