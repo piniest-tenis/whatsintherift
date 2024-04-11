@@ -50,7 +50,7 @@ function Media() {
                 </li>
                 <li>
                     <a href={'https://discord.gg/6hWppp2W5c'} target={'_blank'} rel="noreferrer">
-                        <i className='fa-brands fa-discord' /> Chat with us on GSD Discord
+                        <i className='fa-brands fa-discord' /> Join GSD Discord
                     </a>
                 </li>
                 <li>

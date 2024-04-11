@@ -62,7 +62,18 @@ nav.site-nav {
                     &.section {
                         font-family: Bantayog, sans-serif;
                         text-transform: lowercase;
+                        filter: brightness(7.5);
                         cursor: default;
+
+                        @media (prefers-color-scheme: dark) {
+                            filter: brightness(0.4);
+                        }
+
+                        @include media ('<= tablet') {
+                            & ~ li {
+                                transform: translateX(1.4rem);
+                            }
+                        }
                     }
                     &:hover:not(.section) {
                         background-color: var(--site-black);

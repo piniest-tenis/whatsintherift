@@ -19,13 +19,16 @@ article.media {
         right: -1.4rem;
         top: -5.8rem;
         object-fit: cover;
-        
     }
 
     h1 {
         margin-bottom: 3rem;
         text-align: right;
         max-width: 40%;
+
+        @include media('<= tablet') {
+            margin-bottom: 1.4rem;
+        }
     }
 
     ul {
@@ -36,6 +39,19 @@ article.media {
 
         li {
             text-align: right;
+
+            @include media('<= tablet') {
+                i, svg {
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    margin-right: 1.4rem;
+                }
+
+                svg {
+                    scale: 1.4;
+                    padding-left: .2rem;
+                }
+            }
         }
     }
 

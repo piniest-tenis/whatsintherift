@@ -12,7 +12,7 @@ export const metadata = {
   siteName: "What's in The Rift",
   images: [
     {
-      url: 'https://whatsintherift.com/witr-showcard-season-2.webp',
+      url: 'https://whatsintherift.com//witr-showcard-season-2-twitter-preview.png',
       width: 800,
       height: 800,
       alt: 'The Season 2 Showcard for What\'s in The Rift. A black and white oil painting. A large black mountain stands in front of splatters of gray and black around its base. A black semi-circular arch extends from one side of the mountain to the other. A large H sits above a black circle surroundd by a white glowing border. Inside the circle is a dark gray spire with a bright white light at the top and two orbital paths in white surrounding it.',
@@ -39,10 +39,10 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'What\'s in The Rift',
-    description: 'What\'s in The Rift is the sci-fi and literary actual play system from Gas Station Drugs. Hosted by Josh Burgess, run on Cortex Prime.',
+    description: 'The hit actual play podcast from Gas Station Drugs. Hosted by Josh Burgess, run on Cortex Prime.',
     site: '@whatsintherift',
     creator: '@whatsintherift',
-    images: ['https://whatsintherift.com/witr-showcard-season-2.webp'],
+    images: ['https://whatsintherift.com/witr-showcard-season-2-twitter-preview.png'],
   },
   locale: 'en_US',
   type: 'website'
