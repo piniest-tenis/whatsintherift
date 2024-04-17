@@ -51,7 +51,7 @@ export default function Nav() {
                     </ul>
                 </ContainerNavItem>
                 <li>
-                    <div onClick={() => document.getElementById('site-open').checked = false} className='text'><Link href={`/live`}>LIVE SHOW GenCon 2024</Link>
+                    <div onClick={() => document.getElementById('site-open').checked = false} className='text'><Link href={`/live`}>LIVE SHOW Gen Con 2024</Link>
                     </div>
                 </li>
 

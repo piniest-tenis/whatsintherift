@@ -106,6 +106,32 @@ export default function RootLayout({ children }) {
                 scale="4"
               />
             </filter>
+            <filter id="drop-shadow" color-interpolation-filters="sRGB" x="-50%" y="-50%" height="200%" width="200%">
+
+              <feOffset id="offset" in="SourceAlpha" dx="0.16" dy="-4.5" result="SA-offset" />
+              <feGaussianBlur id="blur" in="SA-offset" stdDeviation="4" result="SA-o-blur" />
+
+              <feComponentTransfer in="SA-o-blur" result="SA-o-b-contIN">
+                <feFuncA id="contour" type="table" tableValues="0 0.2 0.45 0.6 0.7 0.8 0.85 0.9 0.95 1 " />
+              </feComponentTransfer>
+
+              <feComposite operator="in" in="SA-o-blur" in2="SA-o-b-contIN" result="SA-o-b-cont" />
+
+              <feComponentTransfer in="SA-o-b-cont" result="SA-o-b-c-sprd">
+                <feFuncA id="spread-ctrl" type="linear" slope="5.3" />
+              </feComponentTransfer>
+
+              <feColorMatrix id="recolor" in="SA-o-b-c-sprd" type="matrix" values="0 0 0 0 0.071 0 0 0 0 0.071 0 0 0 0 0.071 0 0 0 0.15 0" result="SA-o-b-c-s-recolor" />
+
+              <feTurbulence result="fNoise" type="fractalNoise" numOctaves="6" baseFrequency="1.98" />
+              <feColorMatrix in="fNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 7 -3" result="clipNoise" />
+              <feComposite id="noisemix" operator="arithmetic" in="SA-o-b-c-s-recolor" in2="clipNoise" k1="0" k2="1" result="SA-o-b-c-s-r-mix" />
+
+              <feMerge>
+                <feMergeNode in="SA-o-b-c-s-r-mix" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
           </defs>
         </svg>
       </body>
