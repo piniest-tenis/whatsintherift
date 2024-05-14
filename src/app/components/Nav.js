@@ -45,6 +45,9 @@ export default function Nav() {
                 <ContainerNavItem title="Join Us">
                     <ul>
                         <li>
+                            <Link href={`/mailinglist`}>Join Our Mailing List</Link>
+                        </li>
+                        <li>
                             <Link href={`/media`}>Social Media & Links</Link>
                         </li>
                         <li><a href={'https://www.teepublic.com/user/what-s-in-the-rift'} target={'_blank'}>Merchandise</a></li>

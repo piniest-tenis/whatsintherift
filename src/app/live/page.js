@@ -26,11 +26,17 @@ function Live() {
             <h1>
                 Gen Con 2024 - Indianapolis
             </h1>
+            <h2>TICKETS!</h2>
+            <p>
+                $6 - <a href="https://www.gencon.com/events/246830" style={{ textDecoration: 'underline', color: 'dodgerblue' }} target='_blank'>Available on Gen Con's event site here.</a>
+            </p>
             <h2>
                 When and Where
             </h2>
             <p>
-                TBD - Check back when events are live for Gen Con in mid-May.
+                Friday, August 2nd, 8 PM
+                <br />
+                Crowne Plaza Hotel - Haymarket Station A  - 1st Floor
             </p>
             <h2>
                 Who
