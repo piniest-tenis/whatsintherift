@@ -28,13 +28,13 @@ function Live() {
             </h1>
             <h2>TICKETS!</h2>
             <p>
-                $6 - <a href="https://www.gencon.com/events/246830" style={{ textDecoration: 'underline', color: 'dodgerblue' }} target='_blank'>Available on Gen Con's event site here.</a>
+                $6 - <a href="https://www.gencon.com/events/246830" style={{ textDecoration: 'underline', color: 'dodgerblue' }} target='_blank'>Available on Gen Con's event site</a>
             </p>
             <h2>
                 When and Where
             </h2>
             <p>
-                Friday, August 2nd, 8 PM
+                Friday, August 2nd, 9 PM until Midnight
                 <br />
                 Crowne Plaza Hotel - Haymarket Station A  - 1st Floor
             </p>
@@ -59,7 +59,7 @@ function Live() {
             <p>
                 A live taping of What's in The Rift, the popular Actual Play podcast from Gas Station Drugs. We use the <a href="https://cortexrpg.com" target="_blank">Cortex Prime system</a> from Dire Wolf Digital.
                 <br />
-                We'll be recording a one-shot for distribution on the What's in The Rift podcast feed. Come be a part of our show, as we'll let you - the audience - determine specific things about our characters and our setting.
+                We'll be recording a one-shot for distribution on the What's in The Rift podcast feed. Come be a part of our show. In exchange, we'll let you — the audience — determine specific things about our characters and our setting.
             </p>
             <h3>
                 AND THE PRIZES
