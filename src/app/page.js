@@ -27,7 +27,6 @@ export default function Home() {
         <h1>What is <u>What's in The Rift</u></h1>
         <p>What's in The Rift is an actual play podcast crewed by Yolandie Hamilton, Joseph Rutledge, Grayson Stamm, Summer Schlenker, Ryan Daylor and Patty Hamilton.</p>
         <p>Josh Burgess serves as the game moderator and primary storyteller.</p>
-        <h2>Why should I listen?</h2>
         <p>We use the Cortex Prime system from Dire Wolf Digital to tell improvised and compelling tales that focus on fiction first. Our stories are rarely the type you may associate with actual play podcasts — no one has fought a dragon or met an elf. <i>Yet.</i></p>
         <p>We spend approximately 35 hours per episode to build a tightly edited, professionally sound designed and coherent story. While we don't hide that this story is part of a game, the story is the star of the show.</p>
         <h3>When and where can I listen?</h3>

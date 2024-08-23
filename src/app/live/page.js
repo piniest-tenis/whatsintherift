@@ -17,10 +17,10 @@ function Live() {
     return (
         <article className={`gencon-2024 squiggly-bg${expanded ? ' expanded' : ''}`}>
             <img className='indy' src='/images/indianapolis.jpeg' alt='The Indianapolis skyline' />
-            <strong className='upper-right'>
+            <strong aria-hidden="true" className='upper-right'>
                 COMING LIVE TO YOUR EARS
             </strong>
-            <strong className='lower-left'>
+            <strong aria-hidden="true" className='lower-left'>
                 (and for the first time ever, eyes!)
             </strong>
             <h1>
@@ -59,7 +59,7 @@ function Live() {
             <p>
                 A live taping of What's in The Rift, the popular Actual Play podcast from Gas Station Drugs. We use the <a href="https://cortexrpg.com" target="_blank">Cortex Prime system</a> from Dire Wolf Digital.
                 <br />
-                We'll be recording a one-shot for distribution on the What's in The Rift podcast feed. Come be a part of our show. In exchange, we'll let you — the audience — determine specific things about our characters and our setting.
+                We'll be recording a one-shot for distribution on the What's in The Rift podcast feed. Come be a part of our show. In exchange, we'll let you — the audience - determine specific things about our characters and our setting.
             </p>
             <h3>
                 AND THE PRIZES

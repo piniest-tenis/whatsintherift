@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
                 scale="4"
               />
             </filter>
-            <filter id="drop-shadow" color-interpolation-filters="sRGB" x="-50%" y="-50%" height="200%" width="200%">
+            <filter id="drop-shadow" colorInterpolationFilters="sRGB" x="-50%" y="-50%" height="200%" width="200%">
 
               <feOffset id="offset" in="SourceAlpha" dx="0.16" dy="-4.5" result="SA-offset" />
               <feGaussianBlur id="blur" in="SA-offset" stdDeviation="4" result="SA-o-blur" />

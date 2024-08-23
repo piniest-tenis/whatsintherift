@@ -11,9 +11,9 @@ export default function Nav() {
             <label htmlFor='site-open'>
                 <svg id="burgericon" xmlns="http://www.w3.org/2000/svg" width="70" height="60">
                     <g className="icon">
-                        <rect className="frstbar" x="10" y="10" width="45" height="4" rx="7" ry="7" />
-                        <rect className="scndbar" x="20" y="25" width="30" height="3" rx="7" ry="7" />
-                        <rect className="thrdbar" x="10" y="40" width="45" height="4" rx="7" ry="7" />
+                        <rect className="frstbar" x="10" y="20" width="45" height="4" rx="7" ry="7" />
+                        <rect className="scndbar" x="20" y="35" width="30" height="3" rx="7" ry="7" />
+                        <rect className="thrdbar" x="10" y="50" width="45" height="4" rx="7" ry="7" />
                     </g>
                 </svg>
             </label><input type='checkbox' name='site-open' id='site-open' />
@@ -35,14 +35,11 @@ export default function Nav() {
                 <ContainerNavItem title="Partners">
                     <ul>
                         <li>
-                            <a href={'https://rustyquill.com/show/whats-in-the-rift/'} target="_blank">Rusty Quill</a>
-                        </li>
-                        <li>
                             <a href={'https://www.cortexrpg.com/'} target={'_blank'}>Learn Cortex Prime</a>
                         </li>
                     </ul>
                 </ContainerNavItem>
-                <ContainerNavItem title="Join Us">
+                <ContainerNavItem title="Support Us">
                     <ul>
                         <li>
                             <Link href={`/mailinglist`}>Join Our Mailing List</Link>
@@ -50,14 +47,13 @@ export default function Nav() {
                         <li>
                             <Link href={`/media`}>Social Media & Links</Link>
                         </li>
-                        <li><a href={'https://www.teepublic.com/user/what-s-in-the-rift'} target={'_blank'}>Merchandise</a></li>
                     </ul>
                 </ContainerNavItem>
-                <li>
+                <li><div onClick={() => document.getElementById('site-open').checked = false} className='text'><Link href={`https://www.teepublic.com/user/what-s-in-the-rift`} target={'_blank'}>Merchandise</Link></div></li>
+                {/* <li>
                     <div onClick={() => document.getElementById('site-open').checked = false} className='text'><Link href={`/live`}>LIVE SHOW Gen Con 2024</Link>
                     </div>
-                </li>
-
+                </li> */}
             </ul>
         </nav>
     )
